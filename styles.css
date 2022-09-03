@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/inter-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/inter-900.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+
+html {
+  height: 100%;
+}
+
+.page-body{
+  min-width: 1170px;
+  min-height: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #FEAFC3;
+}
+
+.page-header{
+  width:1170px;
+  margin: 0 auto;
+  padding:0;
+}
+
+.page-header-wrapper{
+  width:100%;
+  min-height: 104px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+}
+
+.menu-list{
+  width: 650px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  gap:32px;
+
+  list-style-type: none;
+}
+
+.menu-item-link{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #2D3440;
+  cursor: pointer;
+}
+
+.header-logo-link{
+  cursor: pointer;
+}
+
+.user-menu-list{
+  width: 500px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:16px;
+
+  list-style-type: none;
+}
+
+.phone-link{
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #2D3440;
+  cursor: pointer;
+}
+
+.user-menu-item-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #2D3440;
+  background: rgba(252, 252, 252, 0.3);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.user-menu-item-link.search{
+  width: 32px;
+  height:32px;
+  padding: 8px;
+
+  border-radius: 27px;
+}
+
+.user-menu-item-link.login{
+  width: 88px;
+  height:32px;
+  padding: 6px 16px;
+
+  border-radius: 30px;
+}
+
+.user-menu-item-link.basket{
+  width: 115px;
+  height: 32px;
+  padding: 6px 16px;
+
+  border-radius: 30px;
+}
+
+.page-main {
+  width:1170px;
+  margin: 0 auto;
+
+  flex-grow: 1;
+}
+
+.page-footer{
+  width:1170px;
+  margin: 0 auto;
+  padding:48px 0;
+}
