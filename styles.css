@@ -23,11 +23,22 @@
 }
 
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
 
-.page-body{
+.page-body {
   min-width: 1170px;
   min-height: 100%;
   margin: 0;
@@ -38,13 +49,13 @@ html {
   background: #FEAFC3;
 }
 
-.page-header{
+.page-header {
   width:1170px;
   margin: 0 auto;
   padding:0;
 }
 
-.page-header-wrapper{
+.page-header-wrapper {
   width:100%;
   min-height: 104px;
 
@@ -56,7 +67,7 @@ html {
   box-sizing: border-box;
 }
 
-.menu-list{
+.menu-list {
   width: 650px;
   margin: 0;
   padding: 0;
@@ -80,6 +91,9 @@ html {
 }
 
 .header-logo-link{
+  width: 137px;
+  height: 56px;
+
   cursor: pointer;
 }
 
@@ -132,7 +146,7 @@ html {
   border-radius: 27px;
 }
 
-.user-menu-item-link.login{
+.user-menu-item-link.login {
   width: 88px;
   height:32px;
   padding: 6px 16px;
@@ -140,7 +154,7 @@ html {
   border-radius: 30px;
 }
 
-.user-menu-item-link.basket{
+.user-menu-item-link.basket {
   width: 115px;
   height: 32px;
   padding: 6px 16px;
@@ -152,10 +166,190 @@ html {
   width:1170px;
   margin: 0 auto;
 
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+
   flex-grow: 1;
 }
 
-.page-footer{
+.slider{
+  min-height: 554px;
+}
+
+.slider-wrapper{
+  padding: 21px 0 0 70px;
+
+  display: flex;
+
+  box-sizing: border-box;
+}
+
+.slider-content {
+  width: 470px;
+  margin-top: 115px;
+}
+
+.slider-content-title{
+  min-height: 92px;
+  margin: 0 0 24px 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+
+  color: #2D3440;
+}
+
+.slider-content-description{
+  width: 414px;
+  margin-bottom: 48px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #2D3440;
+}
+
+.slider-content-button{
+  width: 139px;
+  height: 44px;
+  padding: 12px 32px;
+}
+
+.white-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #2D3440;
+  background: #FCFCFC;
+  border: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.gifts-title{
+  width: 434px;
+  margin: 0 auto 55px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #2D3440;
+}
+
+.gifts-cards{
+  min-height: 268px;
+
+  display: flex;
+  gap:30px;
+}
+
+.gifts-card{
+  width: 570px;
+  min-height: 268px;
+  padding: 36px;
+
+  display: flex;
+  flex-direction: column;
+  gap:28px;
+
+  background: #FF7799;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.gifts-card-title{
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #2D3440;
+}
+
+.gifts-card-content{
+  margin: 0;
+  width: 328px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #2D3440;
+}
+
+.gifts-card-button{
+  width: 176px;
+  min-height: 44px;
+}
+
+.popular{
+  min-height: 92px;
+}
+
+.popular-title{
+  width: 527px;
+  margin: 0 auto 56px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #2D3440;
+}
+
+.popular-ice-list{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  list-style-type: none;
+}
+
+.popular-ice-item{
+  width: 270px;
+  min-height: 281px;
+  margin-top: 51px;
+  padding: 133px 40px 24px;
+
+  background: #FCFCFC;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.page-footer {
   width:1170px;
   margin: 0 auto;
   padding:48px 0;
