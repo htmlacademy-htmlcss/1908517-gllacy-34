@@ -222,7 +222,7 @@ html {
   padding: 12px 32px;
 }
 
-.white-button{
+.button{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,13 +233,24 @@ html {
   font-size: 16px;
   line-height: 20px;
 
+  border: none;
+  border-radius: 26px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  cursor: pointer;
+}
+
+.white-button{
   color: #2D3440;
   background: #FCFCFC;
-  border: none;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  border-radius: 26px;
-  cursor: pointer;
+
+
+}
+
+.red-button{
+  color: #FCFCFC;
+  background: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
 }
 
 .gifts-title{
@@ -346,7 +357,154 @@ html {
 
   background: #FCFCFC;
   border-radius: 8px;
+
   box-sizing: border-box;
+  position: relative;
+}
+
+.popular-ice-item-photo{
+  position: absolute;
+  top: -52px;
+  left: 40px;
+}
+
+.popular-ice-item-title{
+  margin: 0 0 8px 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #2D3440;
+  text-align: center;
+}
+
+.popular-ice-item-content{
+  margin: 0 0 16px 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #565C66;
+  text-align: center;
+}
+
+.popular-ice-item-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-ice-item-price{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #2D3440;
+}
+
+.popular-ice-item-icon-wrapper {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #FF2F64;
+  border-radius: 26px;
+}
+
+.about{
+  min-height: 480px;
+
+  background: url("/images/about-background.jpg");
+  background-size: 1170px 480px;
+  border-radius: 16px;
+}
+
+.about-wrapper{
+  width: 1122px;
+  min-height: 432px;
+  margin: 24px;
+  padding: 56px 0;
+
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.about-title{
+  width: 995px;
+  margin: 0 auto 56px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: #2D3440;
+  text-align: center;
+}
+
+.blog{
+  min-height: 224px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-news{
+  width: 570px;
+  min-height: 224px;
+  padding: 33px 235px 67px 32px;
+
+  background: url("/images/news-background.jpg");
+  background-size: 570px 224px;
+  border-radius: 16px;
+
+  box-sizing: border-box;
+}
+
+.blog-news-title{
+  margin: 12px 0 0 0;
+  width: 303px;
+
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #2D3440;
+}
+
+.blog p{
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #565C66;
+}
+
+.blog-mailing{
+
+}
+
+.blog-form-button{
+  width: 152px;
+  min-height: 44px;
 }
 
 .page-footer {
