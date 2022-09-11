@@ -434,10 +434,11 @@ html {
   width: 1122px;
   min-height: 432px;
   margin: 24px;
-  padding: 56px 0;
+  padding: 56px 40px;
 
   background: #FFFFFF;
   border-radius: 16px;
+  box-sizing: border-box;
 }
 
 .about-title{
@@ -452,6 +453,68 @@ html {
 
   color: #2D3440;
   text-align: center;
+}
+
+.about-content-list{
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 64px 473px 64px 442px;
+  grid-template-rows: 1fr 40px 1fr;
+
+  list-style-type: none;
+}
+
+.about-content-icon{
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  border: 3px solid #2D3440;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.about-content-icon:nth-child(1){
+  grid-row: 1 / 3;
+  background: url("/images/ice-icon.svg") no-repeat 50% 50%;
+}
+
+.about-content-icon:nth-child(3){
+  grid-row: 1 / 3;
+  background: url("/images/cow-icon.svg") no-repeat 50% 50%;
+}
+
+.about-content-icon:nth-child(5){
+  background: url("/images/natural-icon.png") no-repeat 50% 50%;
+}
+
+.about-content-icon:nth-child(7){
+  background: url("/images/thermometer-icon.png") no-repeat 50% 50%;
+}
+
+.about-content-item {
+  width: 442px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #565C66;
+
+  box-sizing: border-box;
+}
+
+.about-content-item:nth-child(2){
+  grid-row: 1 / 3;
+}
+
+.about-content-item:nth-child(4){
+  grid-row: 1 / 3;
 }
 
 .blog{
@@ -498,13 +561,191 @@ html {
   color: #565C66;
 }
 
-.blog-mailing{
+.blog-mailing-wrapper{
+  width: 570px;
+  height: 224px;
+  padding: 6px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("/images/mailing-background.jpg");
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.blog-mailing{
+  width: 558px;
+  height: 212px;
+  padding: 26px;
+
+  background: #FFFFFF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.blog-mailing p{
+  margin-bottom: 42px;
+
+  line-height: 22px;
+}
+
+.blog-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-form-input{
+  width: 332px;
+  height: 48px;
+  padding: 14px;
+
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.blog-form-input::placeholder{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #B9B9B9;
 }
 
 .blog-form-button{
   width: 152px;
   min-height: 44px;
+}
+
+.delivery{
+  padding: 64px 64px 64px 100px;
+  min-height: 534px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: url("/images/delivery-background.jpg");
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.delivery-content{
+  width: 371px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.delivery-title{
+  margin: 0 0 24px 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: #2D3440;
+}
+
+.delivery p{
+  margin:0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #565C66;
+}
+
+.delivery-form{
+  width: 500px;
+  height: 406px;
+}
+
+.contacts{
+  min-height: 492px;
+  padding: 64px;
+
+  background: url("/images/contacts-background.jpg");
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.contacts-content {
+  width: 343px;
+  min-height: 364px;
+  padding: 40px;
+
+  background: #FCFCFC;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.contacts-par{
+  margin: 0 0 12px 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #565C66;
+}
+
+.contacts-address{
+  margin: 0 0 24px 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #2D3440;
+}
+
+.contacts-phone{
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #2D3440;
+}
+
+.contacts-time{
+  margin: 0 0 32px 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #565C66;
+}
+
+.contacts-button{
+  width: 250px;
+  min-height: 46px;
 }
 
 .page-footer {
