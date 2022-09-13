@@ -893,3 +893,14 @@ html {
   border-bottom: 1px solid #2D3440;
   cursor: pointer;
 }
+
+
+.page-catalog {
+  width:1170px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+}
