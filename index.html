@@ -176,7 +176,8 @@
               в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="blog-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="e-mail" class="visually-hidden">Ваш e-mail</label>
-              <input class="blog-form-input" type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+              <!--              Добавить класс text-style-warning к input в случае ошибки-->
+              <input class="blog-form-input text-style" type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
               <button class="blog-form-button button red-button" type="submit" >Отправить</button>
             </form>
           </div>
@@ -186,21 +187,23 @@
       <section class="delivery">
         <div class="delivery-content">
           <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-          <p>Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          <p class="delivery-content-text">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
-        <div class="delivery-form">
-          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+        <div class="delivery-form-container">
+          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="delivery-form-group">
-              <label for="date">Дата</label>
-              <input class="delivery-form-input" type="date" name="date" id="date" placeholder="01.04.20020">
-              <label for="phone">Телефон</label>
-              <input class="delivery-form-input" type="text" name="phone" id="phone" placeholder="+7 800 999-00-00">
-            </div>
-            <div class="delivery-form-group">
-              <label for="address">Телефон</label>
-              <input class="delivery-form-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
-            </div>
+            <label class="delivery-form-label">Дата
+              <!--              Добавить класс text-style-warning к input в случае ошибки-->
+              <input class="delivery-form-input delivery-form-input-date text-style" type="text" name="date" id="date" placeholder="01.04.20020" required>
+            </label>
+            <label class="delivery-form-label">Телефон
+              <!--              Добавить класс text-style-warning к input в случае ошибки-->
+              <input class="delivery-form-input delivery-form-input-phone text-style" type="text" name="phone" id="phone" placeholder="+7 800 999-00-00" required>
+            </label>
+            <label class="delivery-form-label">Телефон
+              <!--              Добавить класс text-style-warning к input в случае ошибки-->
+              <input class="delivery-form-input delivery-form-input-address text-style" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required>
+            </label>
             <button class="delivery-form-button button red-button" type="submit">Отправить</button>
           </form>
         </div>
@@ -266,6 +269,33 @@
         <div>Сделано в <a class="footer-academy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</div>
       </div>
     </footer>
-  <script src="./slider.js"></script>
+
+    <!--Для открытия модального окна добавить класс modal-active-->
+    <div class="modal">
+      <div class="modal-inner">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="modal-form-label">
+            <!--              Добавить класс text-style-warning к input в случае ошибки-->
+              <input class="modal-form-input text-style" type="text" name="name" id="modal-name" placeholder="Имя и фамилия" required>
+            </label>
+            <label class="modal-form-label">
+              <!--              Добавить класс text-style-warning к input в случае ошибки-->
+              <input class="modal-form-input text-style" type="email" name="email" id="modal-email" placeholder="email@example.com" required>
+            </label>
+            <label class="modal-form-label">
+              <!--              Добавить класс text-style-warning к textarea в случае ошибки-->
+              <textarea class="modal-form-input modal-form-input-text text-style" name="text " id="modal-text" placeholder="В свободной форме" required></textarea>
+            </label>
+
+            <button class="modal-submit-button button red-button" type="submit" >Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
