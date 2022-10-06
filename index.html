@@ -61,6 +61,26 @@
     <main class="page-main">
       <h1 class="visually-hidden">Главная страница Глейси</h1>
       <section class="slider">
+        <div class="slider-content">
+          <div class="slider-content-title">Нежный пломбир<br> с клубничным джемом</div>
+          <p class="slider-content-text">Натуральное мороженое из свежих сливок<br>
+            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+          <button class="slider-content-button button white-button" type="button">Заказать</button>
+        </div>
+        <div class="slider-photo-inner">
+          <div class="slider-background"></div>
+          <img class="slider-photo" src="/images/ice.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
+          <div class="slider-button slider-button-left">
+            <svg aria-hidden="true" focusable="false" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z" fill="#FCFCFC"/>
+            </svg>
+          </div>
+          <div class="slider-button slider-button-right">
+            <svg aria-hidden="true" focusable="false" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1352 0.864757C0.875505 0.605058 0.45445 0.605058 0.194751 0.864757C-0.0649472 1.12446 -0.0649472 1.54551 0.194751 1.80521L4.39603 6.00649L0.194713 10.2078C-0.0649858 10.4675 -0.0649858 10.8886 0.194713 11.1483C0.454412 11.408 0.875466 11.408 1.13516 11.1483L5.80388 6.47955C5.80483 6.47861 5.80577 6.47767 5.80672 6.47672C6.06642 6.21702 6.06642 5.79597 5.80672 5.53627L1.1352 0.864757Z" fill="#FCFCFC"/>
+            </svg>
+          </div>
+        </div>
 
       </section>
 
@@ -192,7 +212,7 @@
         <div class="delivery-form-container">
           <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="delivery-form-label">Дата
+            <label class="delivery-form-label delivery-form-label-date">Дата
               <!--              Добавить класс text-style-warning к input в случае ошибки-->
               <input class="delivery-form-input delivery-form-input-date text-style" type="text" name="date" id="date" placeholder="01.04.20020" required>
             </label>
@@ -200,7 +220,7 @@
               <!--              Добавить класс text-style-warning к input в случае ошибки-->
               <input class="delivery-form-input delivery-form-input-phone text-style" type="text" name="phone" id="phone" placeholder="+7 800 999-00-00" required>
             </label>
-            <label class="delivery-form-label">Телефон
+            <label class="delivery-form-label delivery-form-label-address">Адрес
               <!--              Добавить класс text-style-warning к input в случае ошибки-->
               <input class="delivery-form-input delivery-form-input-address text-style" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required>
             </label>

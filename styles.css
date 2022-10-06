@@ -180,6 +180,8 @@ html {
   border-radius: 30px;
 }
 
+/* Главная страница */
+
 .page-main {
   width:1170px;
   margin: 0 auto;
@@ -189,6 +191,120 @@ html {
   gap:80px;
 
   flex-grow: 1;
+}
+
+/* Слайдер */
+
+.slider {
+  min-height: 554px;
+
+  display: flex;
+}
+
+.slider-content {
+  margin: 136px 21px 0 70px;
+  width: 470px;
+}
+
+.slider-content-title {
+  margin: 0 0 24px 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+
+  color: #2D3440;
+}
+
+.slider-content-text {
+  width: 414px;
+  margin: 0 0 48px 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #2D3440;
+}
+
+.slider-content-button {
+  width: 139px;
+  height: 44px;
+}
+
+.slider-photo-inner {
+  width: 312px;
+  height: 312px;
+  padding: 121px 0 121px;
+
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slider-background {
+  width: 312px;
+  height: 312px;
+
+  background: #FFCBD8;
+  border-radius: 50%;
+}
+
+.slider-photo {
+  position: absolute;
+  top: 21px;
+  left: 0;
+}
+
+.slider-button {
+  width: 38px;
+  height: 38px;
+  align-items: center;
+
+  display: flex;
+
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 50%;
+  position: absolute;
+  top: 258px;
+  box-sizing: border-box;
+}
+
+.slider-button-left {
+  padding-left: 12px;
+  left: -19px;
+}
+
+.slider-button-right {
+  padding-left: 15px;
+  right: -19px;
+}
+
+.slider-button:hover {
+  background: #FCFCFC;
+  border: 2px solid transparent;
+}
+
+.slider-button:hover path, .slider-button:focus path, .slider-button:active path {
+  fill: #2D3440;
+}
+
+.slider-button:active {
+  border: 2px solid transparent;
+}
+
+.slider-button:focus {
+  border: 2px solid #2D3440;
+}
+
+.slider-button:disabled {
+  opacity: 0.4;
 }
 
 .gifts-title {
@@ -593,8 +709,10 @@ html {
 }
 
 .delivery-content {
+  margin-top: 103px;
   width: 371px;
 
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -637,7 +755,7 @@ html {
 }
 
 .delivery-form-text {
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
 
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -667,6 +785,29 @@ html {
   line-height: 20px;
 
   color: #2D3440;
+  position: relative;
+}
+
+.delivery-form-label-date:after, .delivery-form-label-address:after {
+  width: 14px;
+  height: 14px;
+
+  position: absolute;
+  top: 3px;
+  content: '';
+  background: url("./images/info-icon.svg") 50% 50% no-repeat;
+}
+
+.delivery-form-label-address:after {
+  left: 57px;
+}
+
+.delivery-form-label-date:after {
+  left: 45px;
+}
+
+.delivery-form-input {
+  height: 48px;
 }
 
 .delivery-form-input-date {
