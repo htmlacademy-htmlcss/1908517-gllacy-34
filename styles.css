@@ -92,12 +92,13 @@ html {
 
   display: flex;
   align-items: center;
-  gap:32px;
 
   list-style-type: none;
 }
 
 .menu-item-link {
+  padding: 8px 16px;
+
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -105,10 +106,12 @@ html {
   line-height: 20px;
 
   color: #2D3440;
+  border-radius: 30px;
   cursor: pointer;
 }
 
 .header-logo-link {
+  margin-right: 16px;
   width: 137px;
   height: 56px;
 
@@ -180,6 +183,252 @@ html {
   border-radius: 30px;
 }
 
+.user-menu-item {
+  position: relative;
+}
+
+.menu-item-active {
+  background: #FF4A78;
+  color: #FCFCFC;
+}
+
+.menu-item-active path {
+  fill: #FCFCFC;
+}
+
+/* Личный кабинет вход попап */
+
+.login-popap {
+  width: 420px;
+  height: 350px;
+  padding: 48px;
+
+  background: #FCFCFC;
+  border-radius: 4px;
+  filter: drop-shadow(0px 15px 40px rgba(45, 52, 64, 0.12));
+  box-sizing: border-box;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 6;
+}
+
+.login-popap-title {
+  margin: 0 0 32px 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #2D3440;
+}
+
+.login-popap-form-input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.login-popap-form-input:nth-child(4) {
+  margin-bottom: 32px;
+}
+
+.login-popap-form-group {
+  display: flex;
+  gap: 23px;
+}
+
+.login-popap-form-button {
+  width: 113px;
+  height: 44px;
+
+  display: flex;
+}
+
+.login-popap-link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #2D3440;
+  border-bottom: 1px solid #2D3440;
+}
+
+.login-popap-form-buttona {
+  display: flex;
+}
+
+.login-popap-link:nth-child(1) {
+  margin-bottom: 2px;
+}
+
+  /* Корзина попап */
+
+.basket-popap {
+  width: 441px;
+  min-height: 382px;
+  padding: 48px;
+
+  background: #FCFCFC;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 6;
+  filter: drop-shadow(0px 15px 40px rgba(45, 52, 64, 0.12));
+  box-sizing: border-box;
+  display: none;
+}
+
+.basket-popap-active {
+  display: block;
+}
+
+.basket-popap-title {
+  margin: 0 0 32px 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #2D3440;
+}
+
+.basket-popap-list {
+  margin: 0 0 32px 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  list-style-type: none;
+}
+
+.basket-popap-item {
+  width: 345px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.basket-popap-photo {
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basket-popap-group {
+  width: 95px;
+  margin-right: 69px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.basket-popap-group-title, .basket-popap-price {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2D3440;
+}
+
+.basket-popap-group-price {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #B9B9B9;
+}
+
+.basket-popap-price {
+  width: 60px;
+  margin-right: 43px;
+}
+
+.basket-popap-close {
+  width: 16px;
+  height: 16px;
+
+  background: url("./images/close-button.svg") 50% 50% no-repeat;
+  background-size: 12px 12px;
+}
+
+.basket-popap-underline {
+  width: 345px;
+  margin-bottom: 32px;
+
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.basket-popap-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basket-popap-button {
+  width: 198px;
+  height: 44px;
+}
+
+.basket-popap-footer-price {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2D3440;
+}
+
+.basket-popap-empty {
+  width: 288px;
+  height: 156px;
+  padding-top: 48px;
+
+  background: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 6;
+  display: none;
+  box-sizing: border-box;
+}
+
+.basket-popap-empty-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #2D3440;
+
+}
+
 /* Главная страница */
 
 .page-main {
@@ -198,6 +447,11 @@ html {
 .slider {
   min-height: 554px;
 
+  display: none;
+  flex-wrap: wrap;
+}
+
+.slider-active {
   display: flex;
 }
 
@@ -241,6 +495,7 @@ html {
 .slider-photo-inner {
   width: 312px;
   height: 312px;
+  margin-right: 56px;
   padding: 121px 0 121px;
 
   box-sizing: border-box;
@@ -306,6 +561,59 @@ html {
 .slider-button:disabled {
   opacity: 0.4;
 }
+
+.slides {
+  margin-top: 229px;
+
+  display: flex;
+  gap: 41px;
+}
+
+.slide {
+  width: 100px;
+  height: 100px;
+
+  background: #FFCBD8;
+  opacity: 0.4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.slide .slider-photo {
+  position: absolute;
+  top: -24px;
+  left: 10px;
+}
+
+.slider-pagination-list {
+  width: 100px;
+  min-height: 12px;
+  margin: 0;
+  padding: 0;
+
+  align-self: flex-end;
+  justify-self: left;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+
+.slider-pagination-item {
+  width: 12px;
+  height: 12px;
+
+  background: #FCFCFC;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.slider-pagination-item.active {
+  opacity: 1;
+}
+
+/* Заказывайте мороженое и получайте подарки */
 
 .gifts-title {
   width: 434px;
@@ -922,6 +1230,13 @@ html {
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+.slider-social-list {
+  margin: 0 0 0 auto;
+
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 
 .footer-social-item{
